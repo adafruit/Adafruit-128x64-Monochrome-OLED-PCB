@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -54,7 +54,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
@@ -156,6 +156,17 @@
 <text x="36.322" y="16.002" size="1.016" layer="22" rot="MR0">Close</text>
 <text x="36.576" y="14.224" size="1.016" layer="22" rot="MR0">SJ1/2</text>
 <text x="14.375" y="22.972" size="1.016" layer="21">DC</text>
+<dimension x1="35" y1="25.5" x2="35" y2="3" x3="41.456" y3="14.25" textsize="1.778" layer="47" visible="yes"/>
+<dimension x1="3" y1="3" x2="35" y2="3" x3="19" y3="-5.08" textsize="1.778" layer="47" visible="yes"/>
+<dimension x1="3" y1="3" x2="0" y2="5.588" x3="1.5" y3="-3.402" textsize="1.778" layer="47" dtype="horizontal" visible="yes"/>
+<dimension x1="35" y1="3" x2="37.592" y2="-3.302" x3="41.91" y3="-3.302" textsize="1.778" layer="47" dtype="leader" visible="yes"/>
+<circle x="37.846" y="-7.112" radius="0.803215625" width="0.254" layer="47"/>
+<wire x1="38.862" y1="-6.096" x2="36.83" y2="-8.128" width="0.254" layer="47"/>
+<text x="36.83" y="-8.128" size="1.778" layer="47">2.5mm
+  x4</text>
+<dimension x1="19" y1="25.43" x2="0" y2="25" x3="9.5" y3="30.5" textsize="1.778" layer="47" dtype="horizontal" visible="yes"/>
+<dimension x1="19" y1="25.43" x2="20.27" y2="25.47" x3="19.635" y3="30.5" textsize="1.778" layer="47" dtype="horizontal" visible="yes"/>
+<dimension x1="19" y1="25.43" x2="8.2" y2="28.5" x3="-2" y3="26.965" textsize="1.778" layer="47" dtype="vertical" visible="yes"/>
 </plain>
 <libraries>
 <library name="microbuilder">
@@ -4354,7 +4365,7 @@
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules>
+<designrules name="default">
 <description language="fr">&lt;b&gt;EAGLE Design Rules for PCBCart (Standard PCB)&lt;/b&gt;
 &lt;p&gt;&lt;b&gt;Characteristics:&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;
@@ -5020,4 +5031,10 @@
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
