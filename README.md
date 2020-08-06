@@ -1,4 +1,5 @@
 ## Adafruit 128x64 Monochrome OLED PCB
+<a href="http://www.adafruit.com/products/326"><img src="assets/326.jpg?raw=true" width="500px"><br/>
 <a href="http://www.adafruit.com/products/326"><img src="assets/image.jpg?raw=true" width="500px"><br/>
 Click here to purchase one from the Adafruit shop</a>
 
